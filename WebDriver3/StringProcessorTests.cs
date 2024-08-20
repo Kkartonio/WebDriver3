@@ -34,7 +34,7 @@ public class StringProcessorTests
         // Act
         var result = _processor.CountMaxConsecutiveIdenticalLetters(input);
 
-        // Assert
+        //Assert
         result.Should().Be(5);
     }
 
