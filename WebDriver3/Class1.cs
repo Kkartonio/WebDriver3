@@ -30,87 +30,65 @@ namespace WebDriver3
             IWebElement secondButton = driver.FindElement(By.XPath("//div[@role='button' and .//h2[text()='Compute Engine']]"));
             secondButton.Click();
 
+            Thread.Sleep(3000);
 
-            //IWebElement inputField = driver.FindElement(By.CssSelector("input#c19"));
-            //inputField.Clear();
-            //inputField.SendKeys("4");
+            IWebElement inputField = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[2]/div/div/div/div/div[2]/div[1]/div[3]/div[3]/button/div"));
 
-            //IWebElement firstDropdown = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[11]/div/div/div[2]/div/div[1]/div[3]/div/div/div/div[1]/div"));
-            //firstDropdown.Click();
-            //IWebElement firstOption = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[11]/div/div/div[2]/div/div[1]/div[3]/div/div/div/div[2]/ul/li[7]"));
-            //firstOption.Click();
+            for (int i = 0; i < 3; i++)
+            {
+                inputField.Click();
+            }
 
-            //IWebElement secondDropdown = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[23]/div/div[1]/div/div/div/div[1]/div"));
-            //secondDropdown.Click();
-            //IWebElement secondOption = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[23]/div/div[1]/div/div/div/div[2]/ul/li[2]"));
-            //secondOption.Click();
+            IWebElement firstDropdown = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[11]/div/div/div[2]/div/div[1]/div[3]/div/div/div/div[1]/div"));
+            firstDropdown.Click();
+            IWebElement firstOption = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[11]/div/div/div[2]/div/div[1]/div[3]/div/div/div/div[2]/ul/li[7]"));
+            firstOption.Click();
 
-            //IWebElement thirdDropdown = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[27]/div/div[1]/div/div/div/div[1]/div"));
-            //thirdDropdown.Click();
-            //IWebElement thirdOption = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[27]/div/div[1]/div/div/div/div[2]/ul/li[3]"));
-            //thirdOption.Click();
+            IWebElement secondSwitch = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[21]/div/div/div[1]/div/div/span/div/button/div/span[1]"));
+            secondSwitch.Click();
+            Thread.Sleep(3000);
 
-            //IWebElement calculateButton = driver.FindElement(By.XPath("//*[@id='ow5']/div/div/div/div/div/div/div[2]/div[1]/div/div[4]/div[2]/div[2]/div/button/span[2]"));
-            //calculateButton.Click();
+            IWebElement thirdDropdown = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[23]/div/div[1]/div/div/div/div[1]/div"));
+            thirdDropdown.Click();
+            IWebElement thirdOption = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[23]/div/div[1]/div/div/div/div[2]/ul/li[2]"));
+            thirdOption.Click();
 
-            //IWebElement finalButton = driver.FindElement(By.XPath("//*[@id='yDmH0d']/div[6]/div[2]/div/div/div/div[1]/a"));
-            //finalButton.Click();
+            IWebElement fourthDropdown = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[27]/div/div[1]/div/div/div/div[1]/div"));
+            fourthDropdown.Click();
+            IWebElement fourthOption = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[27]/div/div[1]/div/div/div/div[2]/ul/li[3]"));
+            fourthOption.Click();
 
-            //string currentUrl = driver.Url;
-            //currentUrl.Should().Contain("cloud.google.com");
+            IWebElement fifthDropdown = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[29]/div/div[1]/div/div/div/div[1]/div"));
+            fifthDropdown.Click();
+            IWebElement fifthOption = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[1]/div/div[2]/div[3]/div[29]/div/div[1]/div/div/div/div[2]/ul/li[5]"));
+            fifthOption.Click();
+            Thread.Sleep(4000);
 
-            //IWebElement txtFieldTitle = driver.FindElement(By.Name("PostForm[name]"));
-            //string expectedTitle = "how to gain dominance among developers";
-            //txtFieldTitle.SendKeys(expectedTitle);
+            IWebElement shareButton = driver.FindElement(By.XPath("//*[@id=\"ow5\"]/div/div/div/div/div/div/div[2]/div[1]/div/div[4]/div[2]/div[2]/div/button/span[5]/i"));
+            shareButton.Click();    
+            Thread.Sleep(3000);
+            IWebElement firstPagePriceElement = driver.FindElement(By.XPath("//*[@id='yDmH0d']/div[5]/div[2]/div/div/div/div[2]/div[1]/div/div/label"));
+            string firstPagePrice = firstPagePriceElement.Text;
 
-            //IWebElement txtPasteExpiration = driver.FindElement(By.XPath("//*[@id="yDmH0d"]/div[5]/div[2]/div/div/div/div[2]/div/div/div[1]/div/div/div"));
-            //txtPasteExpiration.Click();
-            //IWebElement option10Minutes = driver.FindElement(By.XPath("//li[contains(text(), '10 Minutes')]"));
-            //option10Minutes.Click();
+            IWebElement estimateButton = driver.FindElement(By.XPath("//*[@id=\"yDmH0d\"]/div[5]/div[2]/div/div/div/div[1]/a"));
+            estimateButton.Click();
 
-            //IWebElement txtHighlighting = driver.FindElement(By.XPath("//*[@id='select2-postform-format-container']"));
-            //txtHighlighting.Click();
-            //IWebElement txtHighlighting1 = driver.FindElement(By.XPath("/html/body/span[2]/span/span[1]/input"));
-            //txtHighlighting1.SendKeys("Bash");
-            //txtHighlighting1.SendKeys(Keys.Enter);
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
 
-            //IWebElement btnCreate = driver.FindElement(By.XPath("//*[@id='w0']/div[5]/div[1]/div[10]/button"));
-            //btnCreate.Click();
+            IWebElement secondPagePriceElement = driver.FindElement(By.XPath("//*[@id='yDmH0d']/c-wiz[1]/div/div/div/div/div/div[1]/div/div[1]/div[1]/h4"));
+            string secondPagePrice = secondPagePriceElement.Text;
 
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            string firstPagePriceNumeric = new string(firstPagePrice.Where(char.IsDigit).ToArray());
+            string secondPagePriceNumeric = new string(secondPagePrice.Where(char.IsDigit).ToArray());
 
-            //IWebElement newPageTitle = driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/h1"));
-            //string actualTitle = newPageTitle.Text;
-            //if (actualTitle == expectedTitle)
-            //{
-            //    Console.WriteLine("Title matches.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Title does not match. Expected: {expectedTitle}, Actual: {actualTitle}");
-            //}
-
-            //IWebElement newPageHighlighting = driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]"));
-            //string actualHighlighting = newPageHighlighting.Text;
-            //if (actualHighlighting == "Bash")
-            //{
-            //    Console.WriteLine("Highlighting matches.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Highlighting does not match. Expected: Bash, Actual: {actualHighlighting}");
-            //}
-
-            //IWebElement newPageText = driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/ol"));
-            //string actualText = newPageText.Text;
-            //if (actualText == expectedCode.Trim())
-            //{
-            //    Console.WriteLine("Code matches.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Code does not match. Expected: {expectedCode.Trim()}, Actual: {actualText}");
-            //}
+            if (firstPagePriceNumeric == secondPagePriceNumeric)
+            {
+                Console.WriteLine("The prices match: " + firstPagePrice);
+            }
+            else
+            {
+                Console.WriteLine("The prices do not match. First page: " + firstPagePrice + ", Second page: " + secondPagePrice);
+            }
         }
     }
 }
